@@ -1,0 +1,87 @@
+.content {
+  //height: ~'calc(100vh - @{layout-header-height}-80px)';
+  overflow: hidden;
+  //padding: 5px 10px;
+
+  .apply {
+    background: #fff;
+    //height: ~'calc(100vh - @{layout-header-height} - 100px)';
+    padding: 10px 10px 0;
+    overflow: auto;
+    margin-bottom: 10px;
+  }
+
+  .bottomIcon {
+    background: #F8F9FB;
+    text-align: center;
+    border-bottom: 1px solid #E5E5E5;
+    //height: 15px;
+  }
+
+  .textul {
+    padding-top: 4%;
+    line-height: 2;
+    color: #A1A1B6;
+    font-size: 13px;
+  }
+
+  .btnGroup {
+    text-align: center;
+    margin-top: 10px;
+    .btn {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.lel {
+  background: #f7f7f7;
+}
+
+:global {
+  .ant-form-item {
+    margin-bottom: 3px;
+  }
+
+  .ant-collapse {
+    border: 1px solid white
+  }
+
+  .ant-collapse .ant-collapse-item {
+    border: 1px solid white
+  }
+
+  .ant-collapse-content {
+    border: 1px solid white
+  }
+
+  .ant-descriptions-title {
+    margin-bottom: 0px;
+  }
+}
+
+body {
+  :global {
+    .ant-table-thead > tr > th {
+      background: white;
+      border-top: 1px solid rgba(187, 187, 187, 0.3) !important;
+      padding: 8px 8px;
+      border-bottom: 1px solid rgba(0,0,0,.3)!important;
+      box-shadow: 0 2px 5px 0 rgba(0,0,0,.15)!important;
+    }
+
+    .ant-table-tbody > tr > td {
+      padding: 8px 8px
+    }
+
+    .ant-table-title {
+      padding: 4px 4px;
+      //border-top: 1px solid rgba(0, 0, 0, 0.3) !important;
+      //border-bottom: 1px solid rgba(0, 0, 0, 0.3) !important;
+    }
+
+    .ant-table-footer {
+      padding: 8px 8px;
+    }
+  }
+}

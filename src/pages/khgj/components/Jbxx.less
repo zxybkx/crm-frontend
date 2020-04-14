@@ -1,0 +1,86 @@
+.formContent {
+  //height: ~'calc(100vh - @{layout-header-height})';z
+  overflow: hidden;
+  padding: 10px 10px;
+  background: #fff;
+  .stepBox {
+    width: 70vw;
+    margin: 0 auto;
+  }
+  .apply {
+    background: #fff;
+    // height: ~'calc(100vh - @{layout-header-height} - 10px)';
+    padding: 20px 10px 0;
+    overflow: auto;
+    [class*='ant-tabs-top-bar'] {
+      display: none;
+    }
+    [class*='ant-tabs-content'] {
+      //height: ~'calc(100vh - @{layout-header-height} - 120px)';
+    }
+  }
+  .inputBtm{
+    margin-bottom: 5px;
+    z-index: ~'calc(100vh - @{layout-header-height} - 10px)';
+  }
+}
+
+.btnGroup {
+  margin-top: 10px;
+  text-align: center;
+
+  .btn {
+    margin-left: 10px;
+  }
+}
+.btnGroupXz {
+  margin-top: 10px;
+  text-align: right;
+
+  .btn {
+    margin-right: 10px;
+  }
+}
+.text{
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: right;
+  color: rgba(0, 0, 0, 0.85);
+  padding-right: 8px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.inputRight{
+  color: #111;
+  text-align: left;
+  min-height: 40px;
+  line-height: 30px;
+  padding: 4px 10px 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+@media screen and (max-width: 578px) {
+  .text{
+    text-align: left;
+  }
+}
+
+:global {
+  .ant-form-item {
+    margin-bottom: 3px;
+  }
+
+  .ant-collapse {
+    border: 1px solid white
+  }
+
+  .ant-collapse .ant-collapse-item {
+    border: 1px solid white
+  }
+
+  .ant-collapse-content {
+    border: 1px solid white
+  }
+}

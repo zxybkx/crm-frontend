@@ -1,0 +1,102 @@
+.contain {
+  position: relative;
+  //width: 1200px;
+
+  .search {
+    width: 400px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .switch {
+    position: absolute;
+    top: 8px;
+    //left: 500px;
+  }
+  
+  .solution{
+    width: 400px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    li {
+      display: inline;
+
+      a {
+        color: #333;
+        font-weight: 700;
+        padding: 0 22px;
+        text-align: center;
+        line-height: 33px;
+        font-size: 14px;
+        height: 33px;
+
+      }
+
+      a:hover{
+        color: red;
+        //D3AF76
+      }
+    }
+  }
+
+  .content {
+    width: 65vw;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .smallphoto {
+    margin-bottom: 10px;
+
+    .photo {
+      width: 25px;
+      height: 25px;
+      text-align: left;
+      margin-left: 5px;
+    }
+
+    .photo:hover{
+      border: 1px solid red
+    }
+  }
+
+  .money {
+    color: #e4393c;
+    font-family: Verdana;
+    font-weight: 400;
+  }
+
+  .gs {
+    margin-left: 5px;
+    line-height: 22px;
+    float: left;
+    font-family: Verdana;
+  }
+
+  .org {
+    font-weight: bold;
+  }
+}
+
+.modalPhoto {
+  cursor: pointer;
+  transition: all 0.6s;
+}
+
+.modalPhoto :hover{
+  border: 1px solid red;
+  transform: scale(1.4);
+}
+
+:global .ant-divider-horizontal{
+  margin-top: 5px;
+}

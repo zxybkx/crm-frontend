@@ -1,0 +1,12 @@
+@import '~antd/lib/style/themes/default.less';
+
+.content {
+    margin: 0;
+    padding-top: @layout-header-height;
+    height: ~'calc(100vh - @{layout-header-height})';
+    background: #F5F5F5;
+
+  &.top{
+    height: ~'calc(100vh - @{layout-header-height} - @{layout-header-height})';
+  }
+}

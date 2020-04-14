@@ -1,0 +1,114 @@
+@import '~antd/lib/style/themes/default.less';
+
+.container {
+  overflow: hidden;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  color: @white;
+  height: 100%;
+  background: white;
+
+  .video{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    height: 100%; width: 100%;
+  }
+  .videoCover{
+    position: absolute;
+    width: 100%; height: 100%;
+    background: url('../../assets/casic_bg.jpg') no-repeat center center;
+    background-size: cover;
+  }
+  .overlay {
+    position: absolute;
+    top: 0; right: 0; left: 0; bottom: 0;
+    background: rgba(0,0,0,0.5);
+  }
+
+  :global{
+    .ant-input{
+      border-radius: 0;
+    }
+    .ant-btn{
+      border-radius: 0;
+    }
+    .ant-checkbox-wrapper{
+      color: white;
+    }
+  }
+}
+
+.lang {
+  width: 100%;
+  height: 40px;
+  line-height: 44px;
+  text-align: right;
+  :global(.ant-dropdown-trigger) {
+    margin-right: 24px;
+  }
+}
+
+.content {
+  width: 100%;
+  flex: 1;
+  padding: 32px 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  user-select: none;
+}
+
+@media (min-width: @screen-md-min) {
+  .container {
+    background-image: url('../../assets/login_bg.svg');
+    background-repeat: no-repeat;
+    background-position: center 110px;
+    background-size: 100%;
+  }
+
+  .content {
+    padding: 32px 0 24px 0;
+  }
+}
+
+.top {
+  text-align: center;
+}
+
+.header {
+  height: 44px;
+  line-height: 44px;
+  a {
+    text-decoration: none;
+  }
+}
+
+.logo {
+  height: 44px;
+  margin-right: 16px;
+  vertical-align: top;
+}
+
+.title {
+  position: relative;
+  top: 2px;
+  color: @white;
+  font-weight: 600;
+  font-size: 33px;
+}
+
+.desc {
+  margin-top: 12px;
+  margin-bottom: 40px;
+  color: whitesmoke;
+  font-size: @font-size-base;
+}
+
+.foot{
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+}

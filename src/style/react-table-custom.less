@@ -1,0 +1,63 @@
+.ReactTable {
+  width: 100%;
+  height: 100%;
+}
+
+.ReactTable .rt-thead.-header{
+  background: #34c41a14!important;
+}
+.ReactTable .rt-thead .rt-th:hover{
+  background: #1ac4667a!important;
+}
+
+.ReactTable .rt-thead .rt-th, .ReactTable .rt-thead .rt-td {
+  border-right: 1px solid rgba(0, 0, 0, 0.2)!important;
+}
+
+.ReactTable .rt-tbody .rt-tr-group {
+  border-bottom: solid 1px rgba(0, 0, 0, 0.2)!important;
+}
+
+.ReactTable .rt-tbody .rt-td {
+  padding: 0 2px;
+  height: 24px;
+  line-height: 24px;
+  border-right: 1px solid rgba(0, 0, 0, 0.2)!important;
+
+  &.rownumber{
+    background: #34c41a14;
+  }
+}
+
+.ReactTable .rt-tr-group {
+  -webkit-box-flex: 0!important;
+  -ms-flex: 0 0 auto!important;
+  flex: 0 0 auto!important;
+  border-bottom: 1px solid rgba(0,0,0,.1)!important;
+}
+
+.ReactTable.-striped .rt-tr.-odd {
+  background: rgba(0, 0, 0, 0.03)!important;
+}
+
+.ReactTable .rt-noData {
+}
+
+//.ReactTable.-highlight .rt-tbody .rt-tr:not(.-padRow):hover {
+//  background: #ffffca!important;
+//}
+
+.ReactTable .rt-thead.-header {
+  border-bottom: 1px solid rgba(0,0,0,.3)!important;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15)!important;
+}
+
+.ReactTable {
+  :global {
+    .ant-input {
+      padding: 2px;
+      border-radius: 0;
+      border-color: #0096ff;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import '~antd/lib/style/themes/default.less';
+
+.default{
+  height: ~'calc(100vh - @{layout-header-height} - 3px)';
+  overflow: hidden;
+
+  :global {
+    .ant-layout-sider {
+      box-shadow: none!important;
+    }
+    .ant-menu-light{
+      height: 100%;
+      background: #F8F9FB;
+    }
+    .ant-list-sm .ant-list-item {
+      padding-bottom: 0;
+    }
+  }
+}
